@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <!-- standard meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- use Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- use customized CSS -->
+    <link rel="stylesheet" href="style_sheet/mystyle.css">
+
+    <title>Web Visualization Dashboard</title>
+ 
+  </head>
+  <body>
+    <!-- Start of container for navigation menu -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-sm navbar-light">
+        <!-- group brand and toggler buttons under header to make it easier to change background colors -->
+        <div class="navbar-header">
+          <a class="navbar-brand text-white font-weight-bold" href="index.html">Latitude</a>
+          <!-- Toggler/collapsibe Button -->	
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div> 
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+          <ul class="mr-3 navbar-nav">
+        	<!-- Dropdown -->
+            <li class="mr-3 nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Plots
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="visualizations/temperature.html">Max Temperature</a>
+                <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
+                <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="visualizations/windspeed.html">Wind Speed</a>
+              </div>
+            </li>            
+            <li class="mr-3 nav-item">
+              <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="mr-3 nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li> 
+          </ul>
+        </div> 
+      </nav>        
+    </div>  
+	<!-- End of container  -->
+
+    <!-- Start of container for comparison page -->	
+    <div class="container" id="comparison-container">
+      <div class="comparison-description row">
+        <div class="col-md-12">
+          <h1 class="description-header">Comparison: Latitude vs X</h1>
+          <hr class="description-hr"/>
+          <p class="description-text">Click any plot to get an in-depth analysis.</p>
+        </div>	
+      </div>  
+      <div class="row">  
+        <div class="col-md-6">
+          <h3 class="comparison-header">vs. Max Temperature</h3>
+          <a href="visualizations/temperature.html"><img src="pictures/Latitude_vs_Temperature.png" class="comparison-image" alt="Latitude vs. Temperature"></a>
+          <hr class="comparison-hr"/>
+        </div>
+        <div class="col-md-6">
+          <h3 class="comparison-header">vs. Humidity</h3>
+          <a href="visualizations/humidity.html"><img src="pictures/Latitude_vs_Humidity.png" class="comparison-image" alt="Latitude vs. Humidity"></a>
+          <hr class="comparison-hr"/>
+        </div>
+      </div> 
+      <div class="row"> 
+        <div class="col-md-6">
+          <h3 class="comparison-header">vs. Cloudiness</h3>
+          <a href="visualizations/cloudiness.html"><img src="pictures/Latitude_vs_Cloudiness.png" class="comparison-image" alt="Latitude vs. Cloudiness"></a>
+          <hr class="comparison-hr"/>
+        </div>
+        <div class="col-md-6">
+          <h3 class="comparison-header">vs. Wind Speed</h3>
+          <a href="visualizations/windspeed.html"><img src="pictures/Latitude_vs_Windspeed.png" class="comparison-image" alt="Latitude vs. Wind Speed"></a>
+        </div>
+      </div>  
+    </div>
+    <!-- End of container  -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+  <footer class="footer-content">
+    <hr class="footer-hr" />
+    <div >
+      <p>&copy; Copyright Nelson Wang UT Data Boot Camp 2018</p>
+    </div>
+  </footer>
+</html>

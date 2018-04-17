@@ -1,0 +1,205 @@
+/*----------------------------------------------------------------------------*/
+/*styles used on all pages*/
+.description-header {
+  /*define the color of headers used in descriptions of all pages*/
+  color: #4aaaa5;
+}
+
+/*define the background color of containers in all pages*/
+.container {
+  background:#F8F8F8;
+}
+
+.description-container {
+  /*define position and background color of containers used in description area of all pages*/
+  margin-top: 50px;
+  margin-bottom: 50PX;
+  padding-left: 0px;
+  background: #cccccc;
+} 
+
+.description-area {
+  /*define position and background color of description area of all pages*/
+  background: #F8F8F8;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.description-image {
+  /*define the size and position of image used in the description area of all pages*/
+  width: 80%;
+  padding: 10px;
+  margin-left: 50px;
+  margin-bottom: 5px;
+}
+
+.visualization-area {
+  /*define position and background color of visualization area of all pages*/
+  background: #F8F8F8;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 50px;
+}
+
+.visualization-image {
+  /*define the size and position of images used in the visualization area of all pages*/
+  width: 150px;
+  height: 150px;
+  /*margin-top: 10px;*/
+  padding: 10px;
+
+}
+
+.visualization-image:hover {
+  /* hover effects*/
+  opacity: 0.6;
+}
+
+.visualization-image.active {
+  /*show picture border when selected*/
+  border: 2px solid #4aaaa5;
+}
+
+.footer-hr {
+  /*define footer horizonal line color and width*/
+  border-width: 5px;
+  border-color: #4aaaa5;
+}
+
+.footer-content {
+  /*define the styles used in the footer area*/
+  height: 100%;
+  text-align: center;
+  color: white;
+  background: #404040;
+}
+
+/*----------------------------------------------------------------------------*/
+/*styles used on media queries*/
+@media only screen and (max-width: 576px) {
+  /*define styles used in extra small and small screen devices*/
+  body {
+    background: #F8F8F8;  
+  }
+  
+  .navbar-header {
+    background-color: #4aaaa5;
+    width: 100%;
+  }
+
+  .navbar-brand {
+    margin-left: 0 !important;
+  }
+
+  .navbar-toggler {
+    float: right;
+  } 
+
+  .comparison-hr {
+    /*show horizontal line in comparison page*/
+    display: block;
+    visibility: visible;
+  }
+
+  .description-image {
+    margin-left: 10px;
+  }
+
+  .visualization-area {
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+
+ }
+
+@media only screen and (min-width: 577px) {
+/*define styles used in median and larger screen devices*/
+  body {
+    background: #cccccc;
+    line-height: 200%;
+  }
+
+  .comparison-hr {
+    /*hide horizontal line in comparison page*/
+    display: block;
+    visibility: hidden;
+  }
+}
+
+/*----------------------------------------------------------------------------*/
+/*styles used on navigation menu*/
+.container-fluid {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  background-color: #F8F8F8; 
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-brand {
+  margin: 0px;
+  margin-left: 50px;
+  padding: 8px;
+  background: #4aaaa5;
+  font-size: 30px;
+}
+
+/*----------------------------------------------------------------------------*/
+/*styles used on index page*/
+#index-description-image {
+  /*define the size and position of image used in the description area on the index page*/
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding-left: 20px;
+}
+
+#index-description {
+  /*define the position of description paragraph on the index page*/
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+/*----------------------------------------------------------------------------*/
+/*styles used on data page*/
+.table-area th,td {
+  text-align: left;
+  width: 110px;
+  padding-left: 10px;
+}
+
+/*----------------------------------------------------------------------------*/
+/*styles used on comparison page*/
+#comparison-container {
+  /*define position and background color of comparison container*/
+  width: 100%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  padding: 3%;
+} 
+
+.comparison-header {
+  /*define position and color of header in the comparison page*/
+  margin-bottom: 10px;
+  text-align: center;
+  color: #4aaaa5;
+}
+
+.comparison-image {
+  /*define size and position of pictures used in the comparison page*/
+  width: 80%;
+  display: block;
+  margin: auto;
+  }
+
+  .comparison-image:hover {
+  /* hover effects*/
+  opacity: 0.6;
+}
